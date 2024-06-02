@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-brown': '#78350f',
+        'light-orange': '#fed7aa',
       },
       spacing: {
         '300px': '300px',
@@ -17,8 +18,9 @@ module.exports = {
         s: ['14px'],
         m: ['16px'],
         l: ['22px'],
-        xl: ['26px'],
+        xl: ['28px'],
         xxl: ['30px'],
+        xxxl: ['34px'],
       },
       fontFamily: {
         'sans': ['Helvetica', 'Arial', 'sans-serif'],
