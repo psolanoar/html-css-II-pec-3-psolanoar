@@ -5,42 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Blog</title>
   </head>
-  <body class="m-0 p-0">
-    <div class="">
-      <include src="./views/header.html"></include> <!-- import partial header -->
+  <body class="m-0 p-0 font-sans">
+    <include src="./views/header.html"></include> <!-- import partial header -->
       
       <div class="relative w-full h-300px">
         <img src="./assets/images/pexels-zun1412-1721073.jpg" alt="pexels-zun1412-1721073.jpg" class="w-full h-300px object-cover">
         <div class="absolute inset-0 flex flex-col items-center">
-            <h1 class="mt-20 font-normal text-[34px]">CASTELLDEFELS CAKE FEST</h1>
-            <footer class="mt-2">1a Edición</footer>
+            <h1 class="mt-20 font-none text-[34px]">CASTELLDEFELS CAKE FEST</h1>
+            <footer class="mt-2 text-[18px]">1a Edición</footer>
         </div>
       </div>
 
       <div class="pt-4 px-20 text-dark-brown">
         <div>
-          <article class=""> 
-            <div class="">
-              <div>
-                <p class="">
-                  Pasteles, talleres de cocina, concursos y música en directo ¡no te lo puedes perder!
-                </p>
-              </div>
-            </div>
-            <div class="">
-              <div>
-                <p>
-                  La 1a Edición de Cake Fest llega a Castelldefels para dar a conocer los negocios dedicados a la pasteleria que se encuentran en el pueblo.
-                  Tambén se pretende resaltar la importancia que tienen los granjeros en el cultivo de vegetales y frutas, además se incorporarán diferentes 
-                  actividades para promover la importancia del consumo de vegetales especialmente entre los más pequeños.
-                </p>
-              </div>
+          <article class="flex flex-wrap"> 
+            <p class="text-xxl w-full md:w-1/2 m-0 p-1 leading-tight">
+              Pasteles, talleres de cocina, concursos y música en directo ¡no te lo puedes perder!
+            </p>
+            <div class="text-m w-full md:w-1/2 m-0 p-1 leading-loose">
+              <p>
+                La 1a Edición de Cake Fest llega a Castelldefels para dar a conocer los negocios dedicados a la pasteleria que se encuentran en el pueblo.
+                Tambén se pretende resaltar la importancia que tienen los granjeros en el cultivo de vegetales y frutas, además se incorporarán diferentes 
+                actividades para promover la importancia del consumo de vegetales especialmente entre los más pequeños.
+              </p>
             </div>
           </article>
-          <ol class="list-decimal">
+          
+          <ol class="list-decimal text-m">
             <li class="font-bold pl-2 pb-3 pt-5">10.00h</li>
             <li class="pl-2 pb-3">
               Inicio del festival. 
@@ -70,27 +65,29 @@
               Comunicación del local ganador de Castelldefels Cake Fest.
             </li>
           </ol>
+
           <article>
-            <p class="">
+            <p class="text-xxl leading-tight">
               Los participantes de Castelldefels Cake Fest optarán por el reconocimiento local al mejor
               Carrot Cake de Castelldefels.
             </p>
-            <p>
+            <p class="text-m leading-loose">
               El acceso es gratuito, todas las porciones de los pasteles estarán a 3€, exceptuando lal hora de descuento 
               donde se aplicara un 50% de descuento y costarán 1,50€. 
             </p>
-            <p>
+            <p class="text-m leading-loose">
               El evento se realizará el domingo 30 de junio de 2024 en la Plaça del castell, 1, 08860 Castelldefels, Barcelona.
               Puedes llegar al evento con los autobuses X95 y L96. Si vienes en coche no te preocupes, Ttmbién habrá una zona habilitada para el aparcamiento.
             </p>  
-            <p>
+            <p class="text-m leading-loose">
               ¡Ven al festival y vota por tu favorito!
             </p>  
           </article>
-          <img src="./assets/images/pexels-katerina-holmes-5908016.jpg" alt="pexels-katerina-holmes-5908016.jpg" class="body--flex__image"></img>
+
+          <img src="./assets/images/pexels-katerina-holmes-5908016.jpg" alt="pexels-katerina-holmes-5908016.jpg" class="w-full h-300px"></img>
       </div>
+
       <include src="./views/footer.html"></include> <!-- import partial footer -->
       <script type="module" src="./assets/scripts/main.js"></script>
-    </div>
   </body>
 </html>

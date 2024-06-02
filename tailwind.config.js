@@ -10,13 +10,18 @@ module.exports = {
         '300px': '300px',
       },
       padding: {
+        '5': '5%',
         '20': '20%',
       },
       fontSize: {
-        sm: ['14px', '20px'],
-        base: ['16px', '24px'],
-        lg: ['20px', '28px'],
-        xl: ['24px', '32px'],
+        s: ['14px'],
+        m: ['16px'],
+        l: ['22px'],
+        xl: ['26px'],
+        xxl: ['30px'],
+      },
+      fontFamily: {
+        'sans': ['Helvetica', 'Arial', 'sans-serif'],
       }
     },
   },
