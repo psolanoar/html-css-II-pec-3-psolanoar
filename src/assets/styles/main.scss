@@ -28,6 +28,16 @@
 
 @import "layouts/home";
 
+@layer components {
+    .numeric-list {
+      @apply list-decimal text-m;
+    }
+
+    .numeric-item {
+        @apply font-bold pl-2 pb-3 pt-5;
+      }
+  }
+
 /**
  * Do NOT include anything else in this file!
  */
